@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="C:/Users/user/Downloads/Compressed/mysql-connector-java-5.1.38/mysql-connector-java-5.1.38/mysql-connector-java-5.1.38-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/user/Downloads/Compressed/mysql-connector-java-5.1.38/sqlite-jdbc-3.8.11.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/user/Downloads/Compressed/mysql-connector-java-5.1.38/rs2xml.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/avalon-framework-impl-4.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/barbecue-1.5-beta1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/barcode4j-2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-anim-1.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-awt-util-1.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-bridge-1.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-css-1.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-dom-1.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-ext-1.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-gvt-1.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-parser-1.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-script-1.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-svg-dom-1.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-util-1.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-xml-1.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/bcprov-jdk14-138.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jackson-annotations-2.1.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jackson-core-2.1.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jackson-databind-2.1.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jasperreports-6.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jcommon-1.0.23.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jfreechart-1.0.19.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/json-20080701.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jxl-2.6.10.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/log4j-1.2.14.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/poi-3.10.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/serializer-2.7.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/spring-beans-2.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/spring-core-2.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/velocity-1.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/xalan-2.7.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/xml-apis-1.3.04.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/xml-apis-ext-1.3.04.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/itext-5.5.8/itextpdf-5.5.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/itext-5.5.8/itextpdf-5.5.8-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/itext-5.5.8/itextpdf-5.5.8-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/itext-5.5.8/itext-pdfa-5.5.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/itext-5.5.8/itext-pdfa-5.5.8-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/itext-5.5.8/itext-pdfa-5.5.8-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/itext-5.5.8/itext-xtra-5.5.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/itext-5.5.8/itext-xtra-5.5.8-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/itext-5.5.8/itext-xtra-5.5.8-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/beautyeye-master/beautyeye-master/dist/beautyeye_lnf.jar"/>
+	<classpathentry exported="true" kind="lib" path="jgoodies-forms-1.8.0.jar" sourcepath="jgoodies-forms-1.8.0-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/itext-5.5.9/itextpdf-5.5.9.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/itext-5.5.9/itextpdf-5.5.9-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/itext-5.5.9/itextpdf-5.5.9-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/itext-5.5.9/itext-pdfa-5.5.9.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/itext-5.5.9/itext-pdfa-5.5.9-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/itext-5.5.9/itext-pdfa-5.5.9-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/itext-5.5.9/itext-xtra-5.5.9.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/itext-5.5.9/itext-xtra-5.5.9-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/itext-5.5.9/itext-xtra-5.5.9-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/itext-5.5.9/xmlworker-5.5.9.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/itext-5.5.9/xmlworker-5.5.9-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Downloads/Compressed/itext-5.5.9/xmlworker-5.5.9-sources.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
