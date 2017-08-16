@@ -632,5 +632,8 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="batik-css-1.7" level="project" />
+    <orderEntry type="library" name="beautyeye_lnf" level="project" />
+    <orderEntry type="library" name="jasperreports-5.0.1" level="project" />
   </component>
 </module>

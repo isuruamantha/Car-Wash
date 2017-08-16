@@ -40,7 +40,6 @@ public class Login extends JFrame {
                     frame.setResizable(false);
                     frame.setTitle("Sanjeewa Auto A/C and Body Wash");
                     org.jb2011.lnf.beautyeye.BeautyEyeLNFHelper.launchBeautyEyeLNF();
-                    System.out.println("software is working");
 
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -125,6 +124,10 @@ public class Login extends JFrame {
                 .setIcon(new ImageIcon(Login.class.getResource("/Images/tumblr_static_ddi5olaj3io8skk8o00wo04k8.jpg")));
         label_background.setBounds(-27, -17, 1295, 778);
         background_contentPane.add(label_background);
+
+        /*Dummy data*/
+        textField_userName.setText("sanjeewa");
+        textField_userPassword.setText("123");
 
     }
 
