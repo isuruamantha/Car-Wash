@@ -126,8 +126,8 @@ public class Login extends JFrame {
         background_contentPane.add(label_background);
 
         /*Dummy data*/
-        textField_userName.setText("sanjeewa");
-        textField_userPassword.setText("123");
+//        textField_userName.setText("sanjeewa");
+//        textField_userPassword.setText("123");
 
     }
 

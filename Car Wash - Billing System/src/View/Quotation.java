@@ -225,7 +225,7 @@ public class Quotation extends JFrame {
         Total_textField_4.setBounds(661, 559, 111, 20);
         contentPane.add(Total_textField_4);
 
-        lblThankYou = new JLabel("Thank you,");
+        lblThankYou = new JLabel("Thanking you,");
         lblThankYou.setBounds(397, 613, 67, 14);
         contentPane.add(lblThankYou);
 
@@ -389,10 +389,8 @@ public class Quotation extends JFrame {
             document.open();
 
             if (isHeaderNeeded) {
-//                Image image = Image
-//					.getInstance("C:\\Users\\JS\\Google Drive\\CarWash\\SanjeewaCarWash\\quotation-header.png");
-                Image image = Image
-                        .getInstance("C:\\Users\\user\\Google Drive\\Java Work Place - Eclipse 2\\Car Wash - Billing System\\Images\\quotation-header.png");
+//                Image image = Image.getInstance("F:\\Rapticon\\Car Wash\\Car Wash - Billing System\\src\\Images\\quotation-header.png");
+                Image image = Image.getInstance("C:\\Users\\JS\\Google Drive\\CarWash\\quotation-header.png");
                 document.add(image);
             } else {
                 document.add(new Paragraph(" "));
@@ -414,64 +412,62 @@ public class Quotation extends JFrame {
 
             /*Create the table*/
             PdfPTable table = new PdfPTable(2);
-            table.setWidthPercentage(100);
-//            table.addCell(getCell("Text to the left", PdfPCell.ALIGN_CENTER));
-//            table.addCell(getCell("Text to the right", PdfPCell.ALIGN_RIGHT));
-//            table.addCell(getCell("Text to the left", PdfPCell.ALIGN_LEFT));
-//            table.addCell(getCell("Text to the right", PdfPCell.ALIGN_RIGHT));
-//            document.add(table);
+
 
             /*----------*/
             document.add(
                     new Paragraph("                 " + lblCallingPrice.getText() + vehicleNumber_textField.getText()));
             document.add(new Paragraph(
                     "                 ------------------------------------------------------------------------------"));
+            document.add(new Paragraph(" "));
 
+            table.addCell(getCell("Description", PdfPCell.ALIGN_CENTER));
+            table.addCell(getCell( "Amount(Rs.)", PdfPCell.ALIGN_CENTER));
 
             table.addCell(getCell("\u2022 " + airCondition_lblNewLabel.getText(), PdfPCell.ALIGN_LEFT));
-            table.addCell(getCell("Rs." + number1_textField.getText(), PdfPCell.ALIGN_CENTER));
+            table.addCell(getCell( number1_textField.getText(), PdfPCell.ALIGN_RIGHT));
 
             table.addCell(getCell("\u2022 " + toFixAC_lblNewLabel.getText(), PdfPCell.ALIGN_LEFT));
-            table.addCell(getCell("Rs." + number2_textField.getText(), PdfPCell.ALIGN_CENTER));
+            table.addCell(getCell( number2_textField.getText(), PdfPCell.ALIGN_RIGHT));
 
             table.addCell(getCell("\u2022 " + refillOIl_lblNewLabel.getText(), PdfPCell.ALIGN_LEFT));
-            table.addCell(getCell("Rs." + number3_textField.getText(), PdfPCell.ALIGN_CENTER));
+            table.addCell(getCell( number3_textField.getText(), PdfPCell.ALIGN_RIGHT));
 
             table.addCell(getCell("\u2022 " + serviceCharges_lblNewLabel_2.getText(), PdfPCell.ALIGN_LEFT));
-            table.addCell(getCell("Rs." + number4_textField.getText(), PdfPCell.ALIGN_CENTER));
+            table.addCell(getCell( number4_textField.getText(), PdfPCell.ALIGN_RIGHT));
 
 
             if (!((other1_textField.getText().equals("")) && otheramount1_textField.getText().equals(""))) {
                 table.addCell(getCell("\u2022 " + other1_textField.getText(), PdfPCell.ALIGN_LEFT));
-                table.addCell(getCell("Rs." + otheramount1_textField.getText(), PdfPCell.ALIGN_CENTER));
+                table.addCell(getCell( otheramount1_textField.getText(), PdfPCell.ALIGN_RIGHT));
             }
             if (!((other2_textField.getText().equals("")) && otheramount2_textField.getText().equals(""))) {
                 table.addCell(getCell("\u2022 " + other2_textField.getText(), PdfPCell.ALIGN_LEFT));
-                table.addCell(getCell("Rs." + otheramount2_textField.getText(), PdfPCell.ALIGN_CENTER));
+                table.addCell(getCell( otheramount2_textField.getText(), PdfPCell.ALIGN_RIGHT));
             }
             if (!((other3_textField.getText().equals("")) && otheramount3_textField.getText().equals(""))) {
                 table.addCell(getCell("\u2022 " + other3_textField.getText(), PdfPCell.ALIGN_LEFT));
-                table.addCell(getCell("Rs." + otheramount3_textField.getText(), PdfPCell.ALIGN_CENTER));
+                table.addCell(getCell( otheramount3_textField.getText(), PdfPCell.ALIGN_RIGHT));
             }
             if (!((other4_textField.getText().equals("")) && otheramount4_textField.getText().equals(""))) {
                 table.addCell(getCell("\u2022 " + other4_textField.getText(), PdfPCell.ALIGN_LEFT));
-                table.addCell(getCell("Rs." + otheramount4_textField.getText(), PdfPCell.ALIGN_CENTER));
+                table.addCell(getCell( otheramount4_textField.getText(), PdfPCell.ALIGN_RIGHT));
             }
             if (!((other5_textField.getText().equals("")) && otheramount5_textField.getText().equals(""))) {
                 table.addCell(getCell("\u2022 " + other5_textField.getText(), PdfPCell.ALIGN_LEFT));
-                table.addCell(getCell("Rs." + otheramount5_textField.getText(), PdfPCell.ALIGN_CENTER));
+                table.addCell(getCell( otheramount5_textField.getText(), PdfPCell.ALIGN_RIGHT));
             }
 
             table.addCell(getCell("", PdfPCell.ALIGN_LEFT));
-            table.addCell(getCell("---------------------", PdfPCell.ALIGN_CENTER));
+            table.addCell(getCell("---------------------", PdfPCell.ALIGN_RIGHT));
 
-            table.addCell(getCell(lblTotal.getText(), PdfPCell.ALIGN_LEFT));
-            table.addCell(getCell("Rs." + Total_textField_4.getText(), PdfPCell.ALIGN_CENTER));
+            table.addCell(getCell(lblTotal.getText(), PdfPCell.ALIGN_RIGHT));
+            table.addCell(getCell( Total_textField_4.getText(), PdfPCell.ALIGN_RIGHT));
 
-            table.addCell(getCell("", PdfPCell.ALIGN_LEFT));
-            table.addCell(getCell("---------------------", PdfPCell.ALIGN_CENTER));
-            table.addCell(getCell("", PdfPCell.ALIGN_LEFT));
-            table.addCell(getCell("---------------------", PdfPCell.ALIGN_CENTER));
+//            table.addCell(getCell("", PdfPCell.ALIGN_LEFT));
+//            table.addCell(getCell("---------------------", PdfPCell.ALIGN_CENTER));
+//            table.addCell(getCell("", PdfPCell.ALIGN_LEFT));
+//            table.addCell(getCell("---------------------", PdfPCell.ALIGN_CENTER));
 
             document.add(table);
 
@@ -479,7 +475,9 @@ public class Quotation extends JFrame {
             document.add(new Paragraph(" "));
             document.add(new Paragraph(" "));
             document.add(new Paragraph(" "));
-            document.add(new Paragraph("   " + lblThankYou.getText()));
+            document.add(new Paragraph("Thank you for your intereset in our organization and look forward" +
+                    " received your valued order in near future. "));
+            document.add(new Paragraph(lblThankYou.getText()));
             document.add(new Paragraph(" "));
             document.add(new Paragraph(" "));
             document.add(new Paragraph(" "));
@@ -507,8 +505,8 @@ public class Quotation extends JFrame {
     public PdfPCell getCell(String text, int alignment) {
         PdfPCell cell = new PdfPCell(new Phrase(text));
         cell.setHorizontalAlignment(alignment);
-        cell.setPadding(0);
-        cell.setBorder(PdfPCell.NO_BORDER);
+//        cell.setPadding(0);
+//        cell.setBorder(PdfPCell.NO_BORDER);
         return cell;
     }
 

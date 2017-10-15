@@ -323,11 +323,10 @@ public class DatabaseTable extends JFrame {
             Font bf12 = new Font(FontFamily.TIMES_ROMAN, 12);
             document.open();
 
-//			Image image = Image
-//					.getInstance("C:\\Users\\JS\\Google Drive\\CarWash\\SanjeewaCarWash\\quotation-header.png");
-            Image image = Image
-                    .getInstance("C:\\Users\\user\\Google Drive\\Java Work Place - Eclipse 2\\Car Wash - Billing System\\Images\\quotation-header.png");
+//            Image image = Image.getInstance("Images/quotation-header.png");
+            Image image = Image.getInstance("C:\\Users\\JS\\Google Drive\\CarWash\\quotation-header.png");
             document.add(image);
+
             // create a paragraph
             Paragraph paragraph = new Paragraph("");
 
