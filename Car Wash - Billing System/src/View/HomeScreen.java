@@ -2651,7 +2651,7 @@ public class HomeScreen extends JFrame {
             document.open();
 
 			Image image = Image
-					.getInstance("C:\\Users\\JS\\Google Drive\\CarWash\\quotation-header.png");
+					.getInstance("C:\\CarWashData\\quotation-header.png");
 
 //            Image image = Image.getInstance("F:\\Rapticon\\Car Wash\\Car Wash - Billing System\\src\\Images\\quotation-header.png");
 

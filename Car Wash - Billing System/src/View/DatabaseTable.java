@@ -324,7 +324,7 @@ public class DatabaseTable extends JFrame {
             document.open();
 
 //            Image image = Image.getInstance("Images/quotation-header.png");
-            Image image = Image.getInstance("C:\\Users\\JS\\Google Drive\\CarWash\\quotation-header.png");
+            Image image = Image.getInstance("C:\\CarWashData\\quotation-header.png");
             document.add(image);
 
             // create a paragraph

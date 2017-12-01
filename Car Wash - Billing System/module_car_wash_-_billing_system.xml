@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_car_wash_-_billing_system" default="compile.module.car_wash_-_billing_system">
+  <dirname property="module.car_wash_-_billing_system.basedir" file="${ant.file.module_car_wash_-_billing_system}"/>
+  
+  <property name="module.jdk.home.car_wash_-_billing_system" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.car_wash_-_billing_system" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.car_wash_-_billing_system" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.car_wash_-_billing_system" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="car_wash_-_billing_system.output.dir" value="${module.car_wash_-_billing_system.basedir}/bin"/>
+  <property name="car_wash_-_billing_system.testoutput.dir" value="${module.car_wash_-_billing_system.basedir}/bin"/>
+  
+  <path id="car_wash_-_billing_system.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="car_wash_-_billing_system.module.production.classpath">
+    <path refid="${module.jdk.classpath.car_wash_-_billing_system}"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/mysql-connector-java-5.1.38/mysql-connector-java-5.1.38/mysql-connector-java-5.1.38-bin.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/mysql-connector-java-5.1.38/sqlite-jdbc-3.8.11.2.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/mysql-connector-java-5.1.38/rs2xml.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/avalon-framework-impl-4.2.0.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/barbecue-1.5-beta1.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/barcode4j-2.0.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-anim-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-awt-util-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-bridge-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-css-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-dom-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-ext-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-gvt-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-parser-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-script-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-svg-dom-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-util-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-xml-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/bcprov-jdk14-138.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jackson-annotations-2.1.4.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jackson-core-2.1.4.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jackson-databind-2.1.4.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jasperreports-6.1.1.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jcommon-1.0.23.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jfreechart-1.0.19.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/json-20080701.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jxl-2.6.10.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/log4j-1.2.14.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/poi-3.10.1.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/serializer-2.7.1.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/spring-beans-2.5.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/spring-core-2.5.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/velocity-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/xalan-2.7.1.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/xml-apis-1.3.04.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/xml-apis-ext-1.3.04.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itextpdf-5.5.8.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itextpdf-5.5.8-javadoc.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itextpdf-5.5.8-sources.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itext-pdfa-5.5.8.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itext-pdfa-5.5.8-javadoc.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itext-pdfa-5.5.8-sources.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itext-xtra-5.5.8.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itext-xtra-5.5.8-javadoc.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itext-xtra-5.5.8-sources.jar"/>
+    <pathelement location="C:/Users/user/Downloads/beautyeye-master/beautyeye-master/dist/beautyeye_lnf.jar"/>
+    <pathelement location="/jgoodies-forms-1.8.0.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itextpdf-5.5.9.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itextpdf-5.5.9-javadoc.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itextpdf-5.5.9-sources.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itext-pdfa-5.5.9.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itext-pdfa-5.5.9-javadoc.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itext-pdfa-5.5.9-sources.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itext-xtra-5.5.9.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itext-xtra-5.5.9-javadoc.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itext-xtra-5.5.9-sources.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/xmlworker-5.5.9.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/xmlworker-5.5.9-javadoc.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/xmlworker-5.5.9-sources.jar"/>
+    <pathelement location="C:/Users/user/Desktop/lib/batik-css-1.7.jar"/>
+    <pathelement location="C:/Users/user/Desktop/lib/beautyeye_lnf.jar"/>
+    <pathelement location="C:/Users/user/Desktop/lib/jasperreports-5.0.1.jar"/>
+    <path refid="library.batik-css-1.7.classpath"/>
+    <path refid="library.beautyeye_lnf.classpath"/>
+    <path refid="library.jasperreports-5.0.1.classpath"/>
+  </path>
+  
+  <path id="car_wash_-_billing_system.runtime.production.module.classpath">
+    <pathelement location="${car_wash_-_billing_system.output.dir}"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/mysql-connector-java-5.1.38/mysql-connector-java-5.1.38/mysql-connector-java-5.1.38-bin.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/mysql-connector-java-5.1.38/sqlite-jdbc-3.8.11.2.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/mysql-connector-java-5.1.38/rs2xml.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/avalon-framework-impl-4.2.0.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/barbecue-1.5-beta1.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/barcode4j-2.0.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-anim-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-awt-util-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-bridge-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-css-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-dom-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-ext-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-gvt-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-parser-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-script-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-svg-dom-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-util-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-xml-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/bcprov-jdk14-138.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jackson-annotations-2.1.4.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jackson-core-2.1.4.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jackson-databind-2.1.4.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jasperreports-6.1.1.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jcommon-1.0.23.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jfreechart-1.0.19.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/json-20080701.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jxl-2.6.10.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/log4j-1.2.14.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/poi-3.10.1.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/serializer-2.7.1.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/spring-beans-2.5.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/spring-core-2.5.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/velocity-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/xalan-2.7.1.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/xml-apis-1.3.04.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/xml-apis-ext-1.3.04.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itextpdf-5.5.8.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itextpdf-5.5.8-javadoc.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itextpdf-5.5.8-sources.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itext-pdfa-5.5.8.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itext-pdfa-5.5.8-javadoc.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itext-pdfa-5.5.8-sources.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itext-xtra-5.5.8.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itext-xtra-5.5.8-javadoc.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itext-xtra-5.5.8-sources.jar"/>
+    <pathelement location="C:/Users/user/Downloads/beautyeye-master/beautyeye-master/dist/beautyeye_lnf.jar"/>
+    <pathelement location="/jgoodies-forms-1.8.0.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itextpdf-5.5.9.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itextpdf-5.5.9-javadoc.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itextpdf-5.5.9-sources.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itext-pdfa-5.5.9.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itext-pdfa-5.5.9-javadoc.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itext-pdfa-5.5.9-sources.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itext-xtra-5.5.9.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itext-xtra-5.5.9-javadoc.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itext-xtra-5.5.9-sources.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/xmlworker-5.5.9.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/xmlworker-5.5.9-javadoc.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/xmlworker-5.5.9-sources.jar"/>
+    <pathelement location="C:/Users/user/Desktop/lib/batik-css-1.7.jar"/>
+    <pathelement location="C:/Users/user/Desktop/lib/beautyeye_lnf.jar"/>
+    <pathelement location="C:/Users/user/Desktop/lib/jasperreports-5.0.1.jar"/>
+    <path refid="library.batik-css-1.7.classpath"/>
+    <path refid="library.beautyeye_lnf.classpath"/>
+    <path refid="library.jasperreports-5.0.1.classpath"/>
+  </path>
+  
+  <path id="car_wash_-_billing_system.module.classpath">
+    <pathelement location="${car_wash_-_billing_system.output.dir}"/>
+    <path refid="${module.jdk.classpath.car_wash_-_billing_system}"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/mysql-connector-java-5.1.38/mysql-connector-java-5.1.38/mysql-connector-java-5.1.38-bin.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/mysql-connector-java-5.1.38/sqlite-jdbc-3.8.11.2.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/mysql-connector-java-5.1.38/rs2xml.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/avalon-framework-impl-4.2.0.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/barbecue-1.5-beta1.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/barcode4j-2.0.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-anim-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-awt-util-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-bridge-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-css-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-dom-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-ext-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-gvt-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-parser-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-script-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-svg-dom-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-util-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-xml-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/bcprov-jdk14-138.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jackson-annotations-2.1.4.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jackson-core-2.1.4.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jackson-databind-2.1.4.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jasperreports-6.1.1.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jcommon-1.0.23.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jfreechart-1.0.19.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/json-20080701.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jxl-2.6.10.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/log4j-1.2.14.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/poi-3.10.1.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/serializer-2.7.1.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/spring-beans-2.5.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/spring-core-2.5.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/velocity-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/xalan-2.7.1.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/xml-apis-1.3.04.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/xml-apis-ext-1.3.04.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itextpdf-5.5.8.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itextpdf-5.5.8-javadoc.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itextpdf-5.5.8-sources.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itext-pdfa-5.5.8.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itext-pdfa-5.5.8-javadoc.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itext-pdfa-5.5.8-sources.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itext-xtra-5.5.8.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itext-xtra-5.5.8-javadoc.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itext-xtra-5.5.8-sources.jar"/>
+    <pathelement location="C:/Users/user/Downloads/beautyeye-master/beautyeye-master/dist/beautyeye_lnf.jar"/>
+    <pathelement location="/jgoodies-forms-1.8.0.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itextpdf-5.5.9.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itextpdf-5.5.9-javadoc.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itextpdf-5.5.9-sources.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itext-pdfa-5.5.9.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itext-pdfa-5.5.9-javadoc.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itext-pdfa-5.5.9-sources.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itext-xtra-5.5.9.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itext-xtra-5.5.9-javadoc.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itext-xtra-5.5.9-sources.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/xmlworker-5.5.9.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/xmlworker-5.5.9-javadoc.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/xmlworker-5.5.9-sources.jar"/>
+    <pathelement location="C:/Users/user/Desktop/lib/batik-css-1.7.jar"/>
+    <pathelement location="C:/Users/user/Desktop/lib/beautyeye_lnf.jar"/>
+    <pathelement location="C:/Users/user/Desktop/lib/jasperreports-5.0.1.jar"/>
+    <path refid="library.batik-css-1.7.classpath"/>
+    <path refid="library.beautyeye_lnf.classpath"/>
+    <path refid="library.jasperreports-5.0.1.classpath"/>
+  </path>
+  
+  <path id="car_wash_-_billing_system.runtime.module.classpath">
+    <pathelement location="${car_wash_-_billing_system.output.dir}"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/mysql-connector-java-5.1.38/mysql-connector-java-5.1.38/mysql-connector-java-5.1.38-bin.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/mysql-connector-java-5.1.38/sqlite-jdbc-3.8.11.2.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/mysql-connector-java-5.1.38/rs2xml.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/avalon-framework-impl-4.2.0.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/barbecue-1.5-beta1.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/barcode4j-2.0.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-anim-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-awt-util-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-bridge-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-css-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-dom-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-ext-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-gvt-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-parser-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-script-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-svg-dom-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-util-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/batik-xml-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/bcprov-jdk14-138.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jackson-annotations-2.1.4.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jackson-core-2.1.4.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jackson-databind-2.1.4.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jasperreports-6.1.1.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jcommon-1.0.23.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jfreechart-1.0.19.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/json-20080701.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/jxl-2.6.10.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/log4j-1.2.14.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/poi-3.10.1.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/serializer-2.7.1.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/spring-beans-2.5.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/spring-core-2.5.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/velocity-1.7.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/xalan-2.7.1.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/xml-apis-1.3.04.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/dynamicreports-4.0.2-project-with-dependencies/dynamicreports-4.0.2/lib/xml-apis-ext-1.3.04.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itextpdf-5.5.8.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itextpdf-5.5.8-javadoc.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itextpdf-5.5.8-sources.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itext-pdfa-5.5.8.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itext-pdfa-5.5.8-javadoc.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itext-pdfa-5.5.8-sources.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itext-xtra-5.5.8.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itext-xtra-5.5.8-javadoc.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.8/itext-xtra-5.5.8-sources.jar"/>
+    <pathelement location="C:/Users/user/Downloads/beautyeye-master/beautyeye-master/dist/beautyeye_lnf.jar"/>
+    <pathelement location="/jgoodies-forms-1.8.0.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itextpdf-5.5.9.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itextpdf-5.5.9-javadoc.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itextpdf-5.5.9-sources.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itext-pdfa-5.5.9.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itext-pdfa-5.5.9-javadoc.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itext-pdfa-5.5.9-sources.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itext-xtra-5.5.9.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itext-xtra-5.5.9-javadoc.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/itext-xtra-5.5.9-sources.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/xmlworker-5.5.9.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/xmlworker-5.5.9-javadoc.jar"/>
+    <pathelement location="C:/Users/user/Downloads/Compressed/itext-5.5.9/xmlworker-5.5.9-sources.jar"/>
+    <pathelement location="C:/Users/user/Desktop/lib/batik-css-1.7.jar"/>
+    <pathelement location="C:/Users/user/Desktop/lib/beautyeye_lnf.jar"/>
+    <pathelement location="C:/Users/user/Desktop/lib/jasperreports-5.0.1.jar"/>
+    <path refid="library.batik-css-1.7.classpath"/>
+    <path refid="library.beautyeye_lnf.classpath"/>
+    <path refid="library.jasperreports-5.0.1.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.car_wash_-_billing_system">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.car_wash_-_billing_system">
+    <patternset refid="excluded.from.module.car_wash_-_billing_system"/>
+  </patternset>
+  
+  <path id="car_wash_-_billing_system.module.sourcepath">
+    <dirset dir="${module.car_wash_-_billing_system.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.car_wash_-_billing_system" depends="compile.module.car_wash_-_billing_system.production,compile.module.car_wash_-_billing_system.tests" description="Compile module Car Wash - Billing System"/>
+  
+  <target name="compile.module.car_wash_-_billing_system.production" depends="register.custom.compilers" description="Compile module Car Wash - Billing System; production classes">
+    <mkdir dir="${car_wash_-_billing_system.output.dir}"/>
+    <javac2 destdir="${car_wash_-_billing_system.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.car_wash_-_billing_system}/javac">
+      <compilerarg line="${compiler.args.car_wash_-_billing_system}"/>
+      <bootclasspath refid="car_wash_-_billing_system.module.bootclasspath"/>
+      <classpath refid="car_wash_-_billing_system.module.production.classpath"/>
+      <src refid="car_wash_-_billing_system.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.car_wash_-_billing_system"/>
+    </javac2>
+    
+    <copy todir="${car_wash_-_billing_system.output.dir}">
+      <fileset dir="${module.car_wash_-_billing_system.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.car_wash_-_billing_system.tests" depends="register.custom.compilers,compile.module.car_wash_-_billing_system.production" description="compile module Car Wash - Billing System; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.car_wash_-_billing_system" description="cleanup module">
+    <delete dir="${car_wash_-_billing_system.output.dir}"/>
+    <delete dir="${car_wash_-_billing_system.testoutput.dir}"/>
+  </target>
+</project>
